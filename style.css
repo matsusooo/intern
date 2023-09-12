@@ -192,3 +192,65 @@ header h1 {
 .buy-button:focus {
     outline: none;
 }
+
+/* デフォルトのスタイル */
+
+body, h1, h2, p, ul, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+/* 画面幅が 768px 以上の場合のスタイル */
+@media (min-width: 768px) {
+    header {
+        padding: 20px 0; /* ヘッダーのパディングを調整 */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* ナビゲーションの間隔を縮小 */
+    }
+
+    h1 {
+        font-size: 48px; /* ヘッダータイトルのフォントサイズを拡大 */
+    }
+
+    .gift-info {
+        flex-wrap: wrap; /* ギフト情報を折り返す */
+        overflow-x: hidden; /* 横スクロールを無効化 */
+    }
+
+    .gift-item {
+        margin: 10px; /* ギフトアイテムのマージンを縮小 */
+        width: calc(33.33% - 20px); /* ギフトアイテムの幅を3列に分割 */
+    }
+
+    .gift-item:not(:last-child) {
+        margin-right: 10px; /* ギフトアイテムの間隔を調整 */
+    }
+
+    .caple, .about-us, .contact {
+        padding: 20px; /* コンテンツのパディングを調整 */
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact textarea {
+        margin-bottom: 10px; /* 入力フィールドのマージンを縮小 */
+    }
+
+    .contact button[type="submit"] {
+        padding: 10px 15px; /* 送信ボタンのパディングを調整 */
+    }
+
+    footer {
+        padding: 10px 0; /* フッターのパディングを調整 */
+    }
+
+    /* レスポンシブデザインの他のスタイルを追加 */
+}
